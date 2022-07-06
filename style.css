@@ -51,6 +51,7 @@ img {
     height: 550px;
     object-fit: none;
     border-radius: 30px;
+    box-shadow: 3px 1px 10px 1px grey;
 }
 
 @media (max-width: 1000px) {
@@ -88,9 +89,33 @@ h1 {
 h2 {
     font-size: 70px;
 }
+article {
+    position: relative;
+}
+img ~ div {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img ~ div:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+span:last-child {
+    font-size: 40px;
+    font-weight: bold;
+}
 
 @media (max-width: 1000px) {
-    div {
+    section > div {
         display: flex;
         flex-direction: column;
         align-items: center;
