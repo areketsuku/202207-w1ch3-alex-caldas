@@ -80,10 +80,12 @@ button:hover {
 h1 {
     color: #ff5c31;
     font-size: 30px;
+    white-space: nowrap;
 }
 
 h2 {
     font-size: 70px;
+    white-space: nowrap;
 }
 article {
     position: relative;
