@@ -115,5 +115,11 @@ span:last-child {
 section > div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+@media (min-width: 1000px) {
+    section > div {
+        align-items: flex-start;
+    }
 }
